@@ -1,0 +1,199 @@
+//channels sources
+{
+  "schemaVersion": 1,
+  "active": 1;
+  "updated": "2026-06-11",
+  "channels": {
+    "sources": {
+      "catalogs": [
+        {
+          "id": "iptv-org",
+          "name": "iptv-org catalog",
+          "type": "dynamic_catalog",
+          "enabled": true,
+          "license": "public-community-catalog",
+          "endpoints": {
+            "channels": "https://iptv-org.github.io/api/channels.json",
+            "streams": "https://iptv-org.github.io/api/streams.json",
+            "categories": "https://iptv-org.github.io/api/categories.json"
+          },
+          "notes": "Channel metadata and stream URLs are fetched dynamically and are not duplicated in this file."
+        }
+      ],
+      "playlists": [
+        {
+          "id": "iptv-org-global",
+          "name": "iptv-org - global",
+          "url": "https://iptv-org.github.io/iptv/index.m3u",
+          "format": "m3u",
+          "enabled": true,
+          "adult": false
+        },
+        {
+          "id": "iptv-org-by-country",
+          "name": "iptv-org - by country",
+          "url": "https://iptv-org.github.io/iptv/index.country.m3u",
+          "format": "m3u",
+          "enabled": true,
+          "adult": false
+        },
+        {
+          "id": "iptv-org-by-category",
+          "name": "iptv-org - by category",
+          "url": "https://iptv-org.github.io/iptv/index.category.m3u",
+          "format": "m3u",
+          "enabled": true,
+          "adult": false
+        },
+        {
+          "id": "iptv-org-by-language",
+          "name": "iptv-org - by language",
+          "url": "https://iptv-org.github.io/iptv/index.language.m3u",
+          "format": "m3u",
+          "enabled": true,
+          "adult": false
+        },
+        {
+          "id": "iptv-org-by-region",
+          "name": "iptv-org - by region",
+          "url": "https://iptv-org.github.io/iptv/index.region.m3u",
+          "format": "m3u",
+          "enabled": true,
+          "adult": false
+        },
+        {
+          "id": "free-tv-curated",
+          "name": "Free-TV - curated",
+          "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8",
+          "format": "m3u8",
+          "enabled": true,
+          "adult": false
+        },
+        {
+          "id": "iptv-org-adult",
+          "name": "Adult - 18+ (PIN-gated)",
+          "url": "https://iptv-org.github.io/iptv/categories/xxx.m3u",
+          "format": "m3u",
+          "enabled": true,
+          "adult": true
+        }
+      ],
+      "individual": [
+        {
+          "id": "itv1",
+          "name": "ITV1",
+          "provider": "ITV",
+          "country": "GB",
+          "type": "official_web",
+          "url": "https://www.itv.com/watch",
+          "playableInApp": false,
+          "requires": [
+            "ITVX account",
+            "UK TV licence",
+            "supported UK location"
+          ]
+        },
+        {
+          "id": "itv2",
+          "name": "ITV2",
+          "provider": "ITV",
+          "country": "GB",
+          "type": "official_web",
+          "url": "https://www.itv.com/watch",
+          "playableInApp": false,
+          "requires": [
+            "ITVX account",
+            "UK TV licence",
+            "supported UK location"
+          ]
+        },
+        {
+          "id": "itvbe",
+          "name": "ITVBe",
+          "provider": "ITV",
+          "country": "GB",
+          "type": "official_web",
+          "url": "https://www.itv.com/watch",
+          "playableInApp": false,
+          "requires": [
+            "ITVX account",
+            "UK TV licence",
+            "supported UK location"
+          ]
+        },
+        {
+          "id": "itv3",
+          "name": "ITV3",
+          "provider": "ITV",
+          "country": "GB",
+          "type": "official_web",
+          "url": "https://www.itv.com/watch",
+          "playableInApp": false,
+          "requires": [
+            "ITVX account",
+            "UK TV licence",
+            "supported UK location"
+          ]
+        },
+        {
+          "id": "itv4",
+          "name": "ITV4",
+          "provider": "ITV",
+          "country": "GB",
+          "type": "official_web",
+          "url": "https://www.itv.com/watch",
+          "playableInApp": false,
+          "requires": [
+            "ITVX account",
+            "UK TV licence",
+            "supported UK location"
+          ]
+        },
+        {
+          "id": "citv",
+          "name": "CITV",
+          "provider": "ITV",
+          "country": "GB",
+          "type": "official_web",
+          "url": "https://www.itv.com/watch",
+          "playableInApp": false,
+          "requires": [
+            "ITVX account",
+            "UK TV licence",
+            "supported UK location"
+          ]
+        },
+        {
+          "id": "dashif-envivio-reference",
+          "name": "DASH-IF Envivio reference",
+          "provider": "DASH-IF",
+          "type": "dash_reference",
+          "url": "https://dash.akamaized.net/envivio/EnvivioDash3/manifest.mpd",
+          "format": "mpd",
+          "playableInApp": true,
+          "drm": false
+        },
+        {
+          "id": "akamai-cmaf-live-reference",
+          "name": "Akamai CMAF low-latency reference",
+          "provider": "Akamai",
+          "type": "dash_reference",
+          "url": "https://cmafref.akamaized.net/cmaf/live-ull/2006350/akambr/out.mpd",
+          "format": "mpd",
+          "playableInApp": true,
+          "drm": false
+        }
+      ],
+      "userProvided": {
+        "supported": true,
+        "persistedAtRuntime": true,
+        "types": [
+          "m3u",
+          "m3u8",
+          "mpd",
+          "xtream"
+        ],
+        "notes": "User-added URLs and credentials are stored in app settings and are intentionally not written into this bundled asset."
+      }
+    }
+  }
