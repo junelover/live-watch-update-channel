@@ -1,3 +1,13 @@
-{
-  
-}
+{                                                                                                                                              
+    "changelogs": {                                                                                                                              
+      "267291657": [                                                                                                                             
+        "New: Automatic update checks — Live Watch now tells you when a new version is available, with a configurable check interval and a manual
+  'Check for updates' button in Settings.",                                                                                                      
+        "New: First-launch Terms of Use & Privacy Policy consent screen; your choice is remembered so you only see it once.",                    
+        "New: Smooth fade-and-rise transition animations when moving between pages.",                                                            
+        "Fixed: Streams that failed to play with 'ERROR_CODE_PARSING_CONTAINER_UNSUPPORTED' now play correctly — HLS streams without an .m3u8    
+  link are detected and retried automatically.",                                                                                                 
+        "Improved: Clearer playback error messages and a more polished, consistent UI throughout the app."                                       
+      ]                                                                                                                                          
+    }                                                                                                                                            
+  }
